@@ -38,7 +38,7 @@ function drawCharts() {
     ['Pina, Juanfra' ,         1,       2      ],
     ['Ortiz M, Tomas' ,        2,       1      ],
     ['Sanchez, Pablo' ,        2,       1      ],
-    ['Sanchis, Juan M' ,       2,       2      ],
+    ['Sanchis, Juan M' ,       2,       1      ],
     ['Welti, Agustin' ,        3,       0      ],
     
   ]);
