@@ -6,11 +6,12 @@ function drawCharts() {
    //COMBO CHARTS
   
   var data = google.visualization.arrayToDataTable([
-    ['Fecha', 'Presentes', 'Promedio'],
+   	['Fecha', 'Presentes', 'Promedio'],
     
-    ['14-Ene',     3,      3],
-    ['21-Ene',     8,      5.5],
-    ['28-Ene',     6,      5.6]
+    	['14-Ene',     3,      3],
+   	['21-Ene',     8,      5.5],
+    	['28-Ene',     6,      5.6],
+	['04-Feb',     7,      6]	  
   ]);
 
   var options = {
@@ -19,7 +20,7 @@ function drawCharts() {
     seriesType: 'bars',
     series: {1: {type: 'line'}},
     legend: { position: 'top'}
-  };
+  }
 
   var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
   chart.draw(data, options);
@@ -27,19 +28,19 @@ function drawCharts() {
   //BARRAS HORIZONTALES
   var data = google.visualization.arrayToDataTable([
     ['Nombre',            'Presente', 'Ausente'],
-    ['Abraham, Fernando',      0,       3      ],
-    ['Bastan, Pepito' ,        0,       3      ],
-    ['Bazan, Alejandro' ,      2,       1      ],
-    ['Curti, Juan Pablo' ,     0,       3      ],
-    ['Day, Federico' ,         1,       2      ],
-    ['Duo, Guillermo' ,        0,       3      ],
-    ['Lopez, Rodrigo' ,        2,       1      ],
-    ['Navesi, José' ,          2,       1      ],
-    ['Pina, Juanfra' ,         1,       2      ],
-    ['Ortiz M, Tomas' ,        2,       1      ],
-    ['Sanchez, Pablo' ,        2,       1      ],
-    ['Sanchis, Juan M' ,       2,       1      ],
-    ['Welti, Agustin' ,        3,       0      ],
+    ['Abraham, Fernando',      0,       4      ],
+    ['Bastan, Pepito' ,        0,       4      ],
+    ['Bazan, Alejandro' ,      3,       1      ],
+    ['Curti, Juan Pablo' ,     0,       4      ],
+    ['Day, Federico' ,         1,       3      ],
+    ['Duo, Guillermo' ,        0,       4      ],
+    ['Lopez, Rodrigo' ,        3,       1      ],
+    ['Navesi, José' ,          3,       1      ],
+    ['Pina, Juanfra' ,         2,       2      ],
+    ['Ortiz M, Tomas' ,        3,       1      ],
+    ['Sanchez, Pablo' ,        3,       1      ],
+    ['Sanchis, Juan M' ,       3,       1      ],
+    ['Welti, Agustin' ,        3,       1      ],
     
   ]);
 
@@ -231,7 +232,7 @@ function drawCharts() {
     ['Lopez, Rodrigo' ,        0],
     ['Navesi, José' ,          1],
     ['Pina, Juanfra' ,         0],
-    ['Ortiz M, Tomas' ,        0],
+    ['Ortiz M, Tomas' ,        1],
     ['Sanchez, Pablo' ,        0],
     ['Sanchis, Juan M' ,       0],
     ['Welti, Agustin' ,        0],
