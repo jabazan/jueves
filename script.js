@@ -5,14 +5,24 @@ google.setOnLoadCallback(drawCharts);
 function drawCharts() {
   
   var data = google.visualization.arrayToDataTable([
-    ['Fecha','Abraham, Fernando', 'Bastan, Pepito','Bazan, Alejandro','Curti, Juan Pablo','Day, Federico','Duo, Guillermo','Lopez, Rodrigo','Navesi, José' , 'Pina, Juanfra',
+    ['Fecha',
+    'Abraham, Fernando',
+    'Bastan, Pepito',
+    'Bazan, Alejandro',
+    'Curti, Juan Pablo',
+    'Day, Federico',
+    'Duo, Guillermo',
+    'Lopez, Rodrigo',
+    'Navesi, José' ,
+    'Pina, Juanfra',
     'Ortiz M, Tomas' ,
     'Sanchez, Pablo', 
     'Sanchis, Juan M',
     'Welti, Agustin', { role: 'annotation' } ],
-    ['06-Enero',0,1,1,0,1,1,1,1,1,1,1,1,1,''],
-    ['13-Enero',0,0,1,0,1,0,1,1,1,1,1,1,1,''],
-    ['20-Enero',0,0,1,1,0,0,1,0,1,1,1,1,1,'']
+    ['06-Enero',  1,1,1,0,1,0,1,1,1,0,1,1,1,''],
+    ['* 17-Enero',0,1,1,0,1,1,1,1,1,1,1,1,1,''],
+    ['20-Enero',  0,0,1,0,1,0,1,1,1,1,1,1,1,''],
+    ['27-Enero',  0,0,0,0,0,0,0,0,0,0,0,0,0,'']
   ]);
 
   var options_stacked = {
@@ -31,19 +41,19 @@ function drawCharts() {
   //BARRAS HORIZONTALES
   var data = google.visualization.arrayToDataTable([
     ['Nombre',            'Presente', 'Ausente'],
-    ['Abraham, Fernando',      0,       4      ],
-    ['Bastan, Pepito' ,        0,       4      ],
-    ['Bazan, Alejandro' ,      3,       1      ],
-    ['Curti, Juan Pablo' ,     0,       4      ],
-    ['Day, Federico' ,         1,       3      ],
-    ['Duo, Guillermo' ,        0,       4      ],
-    ['Lopez, Rodrigo' ,        3,       1      ],
-    ['Navesi, José' ,          3,       1      ],
-    ['Pina, Juanfra' ,         2,       2      ],
-    ['Ortiz M, Tomas' ,        3,       1      ],
-    ['Sanchez, Pablo' ,        3,       1      ],
-    ['Sanchis, Juan M' ,       3,       1      ],
-    ['Welti, Agustin' ,        3,       1      ],
+    ['Abraham, Fernando',      1,       2     ],
+    ['Bastan, Pepito' ,        2,       1      ],
+    ['Bazan, Alejandro' ,      3,       0      ],
+    ['Curti, Juan Pablo' ,     0,       3      ],
+    ['Day, Federico' ,         3,       0      ],
+    ['Duo, Guillermo' ,        1,       2      ],
+    ['Lopez, Rodrigo' ,        3,       0      ],
+    ['Navesi, José' ,          3,       0      ],
+    ['Pina, Juanfra' ,         3,       0      ],
+    ['Ortiz M, Tomas' ,        2,       1      ],
+    ['Sanchez, Pablo' ,        3,       0      ],
+    ['Sanchis, Juan M' ,       3,       0      ],
+    ['Welti, Agustin' ,        3,       0      ],
     
   ]);
 
@@ -65,7 +75,8 @@ function drawCharts() {
   var pieData = google.visualization.arrayToDataTable([
     ['Nombra', 'Veces'],
     ['Neutral' ,  0],
-    ['Negro', 2],
+    ['Pepi',1],
+    ['Negro', 1],
     ['Guille ',1]
   ]);
   // pie chart options
