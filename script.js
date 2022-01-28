@@ -22,7 +22,7 @@ function drawCharts() {
     ['06-Enero',1,1,1,0,1,0,1,1,1,0,1,1,1,''],
     ['* 17-Enero',0,1,1,0,1,1,1,1,1,1,1,1,1,''],
     ['20-Enero',0,0,1,0,1,0,1,1,1,1,1,1,1,''],
-    ['27-Enero',0,0,0,0,0,0,0,0,0,0,0,0,0,'']
+    ['27-Enero',0,0,1,0,0,0,1,1,1,0,1,1,1,'']
   ]);
 
   var options_stacked = {
@@ -41,19 +41,19 @@ function drawCharts() {
   //BARRAS HORIZONTALES
   var data = google.visualization.arrayToDataTable([
     ['Nombre',            'Presente', 'Ausente'],
-    ['Abraham, Fernando',      1,       2     ],
-    ['Bastan, Pepito' ,        2,       1      ],
-    ['Bazan, Alejandro' ,      3,       0      ],
-    ['Curti, Juan Pablo' ,     0,       3      ],
-    ['Day, Federico' ,         3,       0      ],
-    ['Duo, Guillermo' ,        1,       2      ],
-    ['Lopez, Rodrigo' ,        3,       0      ],
-    ['Navesi, José' ,          3,       0      ],
-    ['Pina, Juanfra' ,         3,       0      ],
-    ['Ortiz M, Tomas' ,        2,       1      ],
-    ['Sanchez, Pablo' ,        3,       0      ],
-    ['Sanchis, Juan M' ,       3,       0      ],
-    ['Welti, Agustin' ,        3,       0      ],
+    ['Abraham, Fernando',      1,       3     ],
+    ['Bastan, Pepito' ,        2,       2      ],
+    ['Bazan, Alejandro' ,      4,       0      ],
+    ['Curti, Juan Pablo' ,     0,       4      ],
+    ['Day, Federico' ,         3,       1      ],
+    ['Duo, Guillermo' ,        1,       3      ],
+    ['Lopez, Rodrigo' ,        4,       0      ],
+    ['Navesi, José' ,          4,       0      ],
+    ['Pina, Juanfra' ,         4,       0      ],
+    ['Ortiz M, Tomas' ,        2,       2      ],
+    ['Sanchez, Pablo' ,        4,       0      ],
+    ['Sanchis, Juan M' ,       4,       0      ],
+    ['Welti, Agustin' ,        4,       0      ],
     
   ]);
 
@@ -77,7 +77,8 @@ function drawCharts() {
     ['Neutral' ,  0],
     ['Pepi',1],
     ['Negro', 1],
-    ['Guille ',1]
+    ['Guille ',1],
+    ['Sanchez',1]
   ]);
   // pie chart options
   var pieOptions = {
